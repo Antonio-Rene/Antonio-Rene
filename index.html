@@ -16,9 +16,17 @@
     javascript-programming-language-icon.png" alt="">
     <h1>Teste de formularios</h1>
     <form action="" autocomplete="on">
-        <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required autocomplete="username"></p>      
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required autocomplete="username"></p></br>
+            <p><label for="itel">Telefone:</label><input type="tel" name="tel" id="itel"></p></br>
+            <input type="range" name="sexo" id="isexo"><label for="isexo">Masculino</label>
+            <input type="range" name="sexo" id="ifemi"><label for="ifemi">Feminino</label>
+        </fieldset>
+        
         <p><label for="ihora">Horario:</label><input type="time" name="hora" id="ihora"></p>
         <p><label for="idata">Data:</label><input type="date" name="data" id="idata"></p>
+        <p><input type="submit" value="Enviar"><input type="reset" value="Apagar"></p>
     </form>
 
     <style src =style.css> </style>
